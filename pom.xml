@@ -75,7 +75,7 @@
 					</execution>
 				</executions>
 				<configuration>
-					<imageName>sureshR-project-manager</imageName>
+					<imageName>suresh-project-manager</imageName>
 					<dockerHost>http://172.18.2.50:2375</dockerHost>
 
 					<dockerDirectory>docker</dockerDirectory>
