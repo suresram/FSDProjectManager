@@ -72,7 +72,7 @@ public class ProjectServiceImpl implements ProjectService{
 		if(taskVO.getParentTaskId()!=null) {
 			parent=parentManagerRepository.findById(taskVO.getParentTaskId()).get();
 		}else {
-			parent.setParentTaskName(taskVO.getParentTaskName());
+			parent.setParentTaskName(taskVO.getTaskName());
 			parent.setProjectId(taskVO.getProjectId());
 			parentManagerRepository.save(parent);
 		}
